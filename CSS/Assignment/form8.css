@@ -1,0 +1,29 @@
+table, td, th{
+       padding: 5px;
+}
+table{
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+th{
+    background-color: rgb(245, 200, 117);
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: rgb(245, 200, 117);
+}
+table tr#row{
+    background-color: rgb(25, 43, 25);
+    color: ivory;
+    text-align: center;
+}
+.left{
+    text-align: right;
+}
+table thead th#head{
+    color: white;
+}
+

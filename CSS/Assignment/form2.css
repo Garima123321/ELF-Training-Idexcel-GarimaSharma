@@ -1,0 +1,23 @@
+body{
+    background-color: yellowgreen;
+}
+table, td, th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 1000px;
+    height: 30px;
+    padding: 15px;
+    margin-top: 150px;
+    margin-left: 200px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+tr{
+    border: 1px solid white;
+}
+th{
+    background-color: yellow;
+   
+}

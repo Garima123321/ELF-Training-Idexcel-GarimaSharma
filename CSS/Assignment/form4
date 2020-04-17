@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form4.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <h3>Create an account</h3>
+        <div>
+            <label for=""></label>
+            <input type="text" name="uname" id="uname" placeholder="User Name">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+        </div>
+        <div>
+            <label for="">Select your avatar:</label>
+            <input type="file" name="file" id="file" placeholder="Select your avatar:">
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>

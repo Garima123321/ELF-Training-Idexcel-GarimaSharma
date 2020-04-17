@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <h3>Sample ELEC418/518 Questionnaire</h3>
+        <h4>Section I:Personal Information</h4>
+        <div>
+            <p>1.In what age group are you?</p>
+        </div>
+        <div>
+            <label for="age"></label>
+            <input type="radio" name="age" id="age">19 and under <br>
+            <input type="radio" name="age" id="age">20-29 <br>
+            <input type="radio" name="age" id="age">30-39 <br>
+            <input type="radio" name="age" id="age">40-49 <br>
+            <input type="radio" name="age" id="age">50-59 <br>
+            <input type="radio" name="age" id="age">60+
+        </div>
+        <div>
+            <p>2.Gender:</p>
+        </div>
+        <div>
+            <label for="gender"></label>
+            <input type="radio" name="gender" id="gender">Male <br>
+            <input type="radio" name="gender" id="gender">Female
+        </div>
+        <div>
+            <p>3.In terms of your current occupation,how would you characterize <br>yourself?</p>
+        </div>
+        <div>
+            <label for="occ"></label>
+            <input type="radio" name="occ" id="occ">Writer<br>
+            <input type="radio" name="occ" id="occ">Administrative Assistant<br>
+            <input type="radio" name="occ" id="occ">Journalist<br>
+            <input type="radio" name="occ" id="occ">Secretary<br>
+            <input type="radio" name="occ" id="occ">Academic<br>
+            <input type="radio" name="occ" id="occ">Professional<br>
+            <input type="radio" name="occ" id="occ">Technical expert<br>
+            <input type="radio" name="occ" id="occ">Student<br>
+            <input type="radio" name="occ" id="occ">Designer<br>
+            <input type="radio" name="occ" id="occ">Administrator/Manager<br>
+            <input type="radio" name="occ" id="occ">Other,please specify:
+        </div>
+        <div>
+            <h3><b>Part 2: To be completed during and/or after software use</b></h3>
+        </div>
+        <div>
+            <p>1.With respect to the version of Microsoft Word currently installed on your <br>machine,please indicate
+                the extent to which you agree or disagree with <br>the following statements:</p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>SD=Strongly Disagree</td>
+                </tr>
+                <tr>
+                    <td>D=Disagree</td>
+                </tr>
+                <tr>
+                    <td>N=Neutral</td>
+                </tr>
+                <tr>
+                    <td>A=Agree</td>
+                </tr>
+                <tr>
+                    <td>SA=Strongly Agree</td>
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <td>This software is easy to use.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label> </td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label> </td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label> </td>
+            </tr>
+            <tr>
+                <td>I am in control of the contents of the menus and toolbars.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">DA</label></td>
+            </tr>
+            <tr>
+                <td>I will be able to learn how to use all that is offered in this software.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>Navigating through the menus and toolbars is easy to do.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>This software is engaging.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>The contents of the menus and the toolbars match my needs.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>Getting started with this version of the software is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>This software is flexible.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>Finding the options that I want in the menus and toolbars is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>It is easy to make the software do exactly what I want.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>Discovering new features is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>I get my word processing tasks done quickly with this software.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+            <tr>
+                <td>This software is satisfying to use.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SD</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">D</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">N</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">A</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">SA</label></td>
+            </tr>
+        </table>
+        <div>
+            <p><b>Part 3: To be Completed once both versions of Microsoft Word have been <br>used by the subject.</b>
+            </p>
+        </div>
+        <div>
+            <p>
+                1.If you could choose only one of the versions to continue using, which would <br>it be?
+            </p>
+        </div>
+        <div>
+            <label for="SW"></label>
+            <input type="radio" name="SW" id="SW">Microsoft Word 2000
+            <input type="radio" name="SW" id="SW">Microsoft Word Personal
+        </div>
+        <div>
+            <p>2.What particular aspect(s) of Microsoft Word 2000 did you like?</p>
+        </div>
+        <div>
+            <label for="comments"></label> <br>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <p>3.What particular aspect(s) of Microsoft Word 2000 did you dislike?</p>
+        </div>
+        <div>
+            <label for="comments"></label> <br>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <p>4.What particular aspect(s) of Microsoft Word Personal did you like?</p>
+        </div>
+        <div>
+            <label for="comments"></label> <br>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <p>5.What particular aspect(s) of Microsoft Word Personal did you dislike?</p>
+        </div>
+        <div>
+            <label for="comments"></label> <br>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <p>6. There are a number of criteria listed below.Please select the version that <br>would be your 1st chice
+                according to each of the criteria. If you really <br> cannot make a choice for a given criteria please
+                select "Equal".</p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>2000=Microsoft Word 2000</td>
+                </tr>
+                <tr>
+                    <td>Personal=Microsoft Word Personal</td>
+                </tr>
+                <tr>
+                    <td>Equal=2000 and Personal satisfy this criteria equally</td>
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <td>This software is easy to use.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>I am in control of the contents of the menus and toolbars.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>I will be able to learn how to use all that is offered in this software.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>Navigating through the menus and toolbars is easy to do.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>This software is engaging.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>Getting started with this version of the software is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>This software is flexible.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>Finding the options that I want in the menus and toolbars is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>It is easy to make the software do exactly what I want.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>Discovering new features is easy.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>I get my word processing tasks done quickly with this software.</td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td><input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td> <input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+            <tr>
+                <td>This software is satisfying to use.</td>
+                <td><input type="radio" name="SW" id="SW"><label for="SW">2000</label></td>
+                <td><input type="radio" name="SW" id="SW"><label for="SW">Personal</label></td>
+                <td><input type="radio" name="SW" id="SW"><label for="SW">Equal</label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

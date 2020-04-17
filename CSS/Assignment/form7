@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form7.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <div>
+            <h3>Sign up</h3>
+        </div>
+        <div>
+            <label for="name">Username</label><br>
+            <input type="text" name="name" id="name" placeholder="Username">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="pwd">Password</label><br>
+            <input type="password" name="pwd" id="pwd" placeholder="Password">
+        </div>
+        <div>
+            <label for="rpwd">Retype Password</label><br>
+            <input type="password" name="rpwd" id="rpwd" placeholder="Retype Password">
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="">Accept the terms and policies</label>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="reset" value="SIGN UP">
+        </div>
+        <div>
+            <p>Already have an account?</p>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="submit" value="SIGN IN">
+        </div>
+    </form>
+</body>
+
+</html>
