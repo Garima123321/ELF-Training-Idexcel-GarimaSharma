@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <h3>Education Questionnaire</h3>
+        <div>
+            <p>Please click here to indicate your informed consent to participate in this <br>study</p>
+            <h5>Part A. Education</h5>
+        </div>
+        <div>
+            <p>The questions in this section are designed to collect information on your education and how you have
+                <br>been financially supported during your doctoral program.</p>
+        </div>
+        <div>
+            <p><b>A1.When did you first enroll in this doctoral program?</b></p>
+            <label for="month">Month Year</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div>
+            <p><b>A2.When were you addmitted to candidacy for the doctorate?</b></p>
+            <label for="month">Month Year</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div>
+            <p><b>A2a. Please record your primary area of specialization. Then, using the drop down list, please select
+                    <br>the field that comes closest to describing or including your primary area of specialization.</b>
+            </p>
+        </div>
+        <div>
+            <label for="branch"><b>Primary Area <br>of Specialization</b></label>
+            <select name="branch" id="branch">
+                <option value="0"></option>
+                <option value="1">Domain</option>
+                <option value="2">Kingdom</option>
+                <option value="3">Phylum</option>
+                <option value="4">Class</option>
+                <option value="5">Order</option>
+                <option value="6">Family</option>
+                <option value="7">Genus</option>
+                <option value="8">Species</option>
+            </select>
+        </div>
+        <div>
+            <p><b>A2b.Please record any additional areas of specialization you currently have. Then, using the drop
+                    <br>down list, please select the feild that comes closest to describing or including that additional
+                    <br>area of specialization.</b></p>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">If none mark this.</label>
+        </div>
+        <div>
+            <label for="branch"><b>1.Area of Specialization</b></label>
+            <select name="branch" id="branch">
+                <option value="0"></option>
+                <option value="1">Domain</option>
+                <option value="2">Kingdom</option>
+                <option value="3">Phylum</option>
+                <option value="4">Class</option>
+                <option value="5">Order</option>
+                <option value="6">Family</option>
+                <option value="7">Genus</option>
+                <option value="8">Species</option>
+            </select>
+        </div> <br>
+        <div>
+            <label for="branch"><b>2.Area of Specialization</b></label>
+            <select name="branch" id="branch">
+                <option value="0"></option>
+                <option value="1">Domain</option>
+                <option value="2">Kingdom</option>
+                <option value="3">Phylum</option>
+                <option value="4">Class</option>
+                <option value="5">Order</option>
+                <option value="6">Family</option>
+                <option value="7">Genus</option>
+                <option value="8">Species</option>
+            </select>
+        </div> <br>
+        <div>
+            <label for="branch"><b>3.Area of Specialization</b></label>
+            <select name="branch" id="branch">
+                <option value="0"></option>
+                <option value="1">Domain</option>
+                <option value="2">Kingdom</option>
+                <option value="3">Phylum</option>
+                <option value="4">Class</option>
+                <option value="5">Order</option>
+                <option value="6">Family</option>
+                <option value="7">Genus</option>
+                <option value="8">Species</option>
+            </select>
+        </div>
+        <div>
+            <p><b>A3. When do you expect to be awarded your doctorate?</b></p>
+            <label for="month">Month Year</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><b>A4. Before entering this doctorate program,had you already completed a master's degree
+                            in:</b></td>
+                    <td><i>Mark Yes or No for Each</i></td>
+                </tr>
+                <tr>
+                    <td>a. Your current field?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+                </tr>
+                <tr>
+                    <td>b. Another field?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><b>A5. While studying for your doctorate,will you also receive any of the following as part of a
+                            joint,<br>concurrent, or combined degree program:3</b></td>
+                    <td><i>Mark Yes or No for Each</i></td>
+                </tr>
+                <tr>
+                    <td>a. Proffessional doctorate (e.g., MD,DDS,OD,JD)?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+                </tr>
+                <tr>
+                    <td>b. Professional master's degree(e.g.,MBA,MPA,MPH,PSM)?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+                </tr>
+                <tr>
+                    <td>c. Master's degree in your current doctoral program?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+                </tr>
+                <tr>
+                    <td>d. Master's degree in a different field?</td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">Yes</label></td>
+                    <td> <input type="radio" name="field" id="field"><label for="field">No</label></td>
+            </table>
+        </div>
+        <div>
+            <p><b>A6. Did you write a master's thesis?</b></p>
+            <label for="field"></label>
+            <input type="radio" name="field" id="field">Yes <br>
+            <input type="radio" name="field" id="field">No
+        </div>
+        <div>
+            <p><b>A7. While studying for doctorate,will you receive a certificate in another field or skill area??</b>
+            </p>
+            <label for="field"></label>
+            <input type="radio" name="field" id="field">Yes <br>
+            <input type="radio" name="field" id="field">No
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><b>A8. While in your program. how many research presentations(including poster presentations)<br> have
+                    you made at:</b></td>
+                    <td><b>Number</b><br><i> If None: Enter Zero</i></td>
+                </tr>
+                <tr>
+                    <td>a. Research conference on your campus (including <br>other units of a multi-campus system)?</td>
+                    <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                </tr>
+                <tr>
+                    <td>b. At regional,national,or international meetings?</td>
+                    <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                </tr>
+            </table>  
+        </div>
+        <div>
+            <table>
+                <tr>
+            <td><b>A10. From which of the following sources have you received travel funds for research presentations?</b></td>
+                </tr>
+                <tr>
+            <td>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">IF NOT KNOWN : MARK THIS BOX</label>
+             </td>
+            </tr>
+            <tr>
+                <td>Mark up to three</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">National Fellowship</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Traineeship</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Professional Society</label></td>
+            </tr>
+             <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Graduate program</label></td>
+             </tr>   
+             <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">University or school/college</label></td>
+             </tr>   
+              <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Extramural grant</label></td>
+              </tr>  
+              <tr>
+                <td><label for="comments">Other-Specify source:</label> <br>
+                <textarea name="comments" id="comments" cols="5" rows="3"></textarea></td>
+              </tr>  
+              <tr>
+                  <td><b> A11. How many research publications have you authored or coauthored before and during your <br>doctoral studies(include pieces accepted for publication but not yet published)?</b></td>
+                  <td><b>Before <br>Doctoral <br>Studies</b></td>
+                  <td><b>During <br>Doctoral <br>Studies</b></td>
+              </tr>
+              <tr>
+                <td>a. Refereed articles</td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+            </tr>
+            <tr>
+                <td>b. Book chapters</td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+            </tr>
+            <tr>
+                <td>c. Book reviews</td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+            </tr>
+            <tr>
+                <td>d. Books or edited volumes</td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+                <td><input type="number" name="field" id="field" min="0" max="100"><label for="field"></label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">IF NOT KNOWN : MARK THIS BOX</label>
+                 </td>
+            </tr>
+            <tr>
+                <td><b>A12. Which of the following have been largest sources of financial support during your doctoral <br>program?</b></td>
+            </tr>
+            <tr>
+                <td>Mark up to three sources</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">National Fellowship/Scholarship</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Institutional Fellowship/Stipend</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Traineeship</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Teaching assistantship (TA)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Research assistantship</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Other assistantship (e.g., general assitantship)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Internship, clinical residency</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Personal earnings during graduates school (other than sources listed above)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Loans (from any source)</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Personal savings</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Spouse's,partner's,or family earnings or savings</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Employer's reimbursement/assistance</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbok"><label for="">Foreign (non-U.S.)</label></td>
+            </tr>
+            <tr>
+                <td><b>A13. If you had a fellowship,scholarship,traineeship,or assistantship,with what degree of suooprt <br>did it provide you?</b></td>
+            </tr>
+            <tr>
+                <td>Mark one only</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbox"><label for="">Full</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkbox" id="checkbox"><label for="">Partial</label></td>
+            </tr>
+            <tr>
+                <td><b>Part B: Postgraduation Plans</b></td>
+                
+            </tr>
+            <tr>
+                <td><i>The questions in this section are designed to collect information on your career plans and whether and <br>how they have changed over time.</i> </td>
+            </tr>
+            <tr>
+                <td><b>B1. When you entered your doctoral program, what were your primary and secondary career goals?</b></td>
+                <td>Mark One in Each Column</td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Primary</b></td>
+                <td><b>Secondary</b></td>
+                
+            </tr>
+            
+                <tr>
+                    <td>a. Research and development</td>
+                    <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                    <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                </tr>
+            </tr>
+            <tr>
+                <td>b. Teaching</td>
+                <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+            </tr>
+            
+                <tr>
+                    <td>c. Management or administration</td>
+                    <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                    <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                </tr>
+                
+                    <tr>
+                        <td>d. Professional services to individuals</td>
+                        <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                        <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comments">e. Other-Specify source:</label> <br>
+                        <textarea name="comments" id="comments" cols="10" rows="3"></textarea></td>
+                     </tr>  
+                    <tr>
+                        <td><input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="">If No Secondary Career Goals: Mark this Box</label></td>
+                    </tr>    
+                    <tr>
+                        <td><b>B2. At this time, what are your primary and secondary career goals?</b></td>
+                        <td>Mark One in Each Column</td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><b>Primary</b></td>
+                        <td><b>Secondary</b></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>a. Research and development</td>
+                            <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                            <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td>b. Teaching</td>
+                        <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                        <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                    </tr>
+                    
+                        <tr>
+                            <td>c. Management or administration</td>
+                            <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                            <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                        </tr>
+                        
+                            <tr>
+                                <td>d. Professional services to individuals</td>
+                                <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                                <td><input type="checkbox" name="checkbox" id="checkbox"><label for=""></label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="comments">e. Other-Specify source:</label> <br>
+                                <textarea name="comments" id="comments" cols="10" rows="3"></textarea></td>
+                             </tr>  
+                            <tr>
+                                <td><input type="checkbox" name="checkbox" id="checkbox">
+                                    <label for="">If No Secondary Career Goals: Mark this Box</label></td>
+                            </tr>  
+                            <tr>
+                               <td><label for="radio"><b>B3. Do you feel supported by your advisor in your current career goals?</b></label></td>
+                            </tr>  
+                            <tr>
+                                <td><input type="radio" name="radio" id="radio">Yes<br> </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="radio" id="radio">No<br></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="radio" id="radio">Not Certain</td>
+                            </tr>
+             </table>
+        </div>
+     </form>
+</body>
+
+</html>
