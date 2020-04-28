@@ -1,0 +1,13 @@
+img{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 20px;
+    margin-left: 80px;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-style: oblique;
+}

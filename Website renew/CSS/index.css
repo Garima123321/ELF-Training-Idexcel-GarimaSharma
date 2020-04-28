@@ -1,0 +1,53 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/Images/landscape-1112911__340.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    background-color: black;
+}
+.backimg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.profile{
+    width: 350px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 30px 0;
+    border-radius: 10px;
+    color: white;
+}
+img{
+    height: 180px;
+    border-radius: 100px;
+}
+.profiletext{
+    margin-bottom: 20px;
+}
+.profiletext h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.profiletext h3{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+i{
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
