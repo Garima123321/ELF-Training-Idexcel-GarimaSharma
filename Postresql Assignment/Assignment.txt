@@ -1,0 +1,91 @@
+Q.1)W.A.Q to list all the employees whose salary is null.
+Query:- select * from employee where salary IS null; 
+
+Q.2)W.A.Q to list all the employees who don't have a deptno.
+Query:- select * from employee where deptno IS null;
+
+Q.3)W.A.Q to list all the salesman in dept 30.
+Query:- select * from employee where designation='Salesman' and deptno=30;
+
+Q.4)W.A.Q to list all the salesmanin dept number 30 and having salary greater than 1500.
+Query:- select * from employee where designation='Salesman' and deptno=30 and salary>1500;
+
+Q.5)W.A.Q to list all the employees whose name starts with 'S' or 'A'.
+Query:- select * from employees where ename like 'S%' or ename like 'A%';
+
+Q.6)W.A.Q to list all the employees except those who are working in dept 10 and 20.
+Query:- select * from employee where deptno not in(10,20);
+
+Q.7)W.A.Q to list the employees whose name does not start with 'S'.
+Query:- select * from employee where ename not like 'S%';
+
+Q.8)W.A.Q to list all the employees who are having reporting managers in dept 10.
+Query:- select * from employee where designation='managers' and deptno=10;
+
+Q.9)W.A.Q to list all the employees whose salary is null and working as clerk.
+Query:- select * from employee where salary is null and designation='clerk';
+
+Q.10)W.A.Q to list all the employees who don't have a reporting manager in deptno 10 or 30.
+Query:- select * from employee where designation !='manager' and deptno not in(10,30);
+
+Q.11)W.A.Q to list all the salesman in dept 30 with salary more than 2450.
+Query:- select * from employee where designation='Salesman' and deptno=30 and salary>2450;
+
+Q.12)W.A.Q to list all the analyst in dept number 20 and having salary greater than 2500.
+Query:- select * from employee where designation='analyst' and deptno=20 and salary>2500;
+
+Q.13)W.A.Q to list all the employees whose name starts with 'M' or 'J'.
+Query:- select * from employee where ename like 'M%' or ename like 'J%'; 
+
+Q.14)W.A.Q to list all the employees with annual salary except those who are working in dept 30.
+Query:- select *,salary*12 as annual_sal from employee where deptno!=30;
+
+Q.15)W.A.Q to list all the employees whose name does not end with 'ES' or 'R'.
+Query:- select * from employee where ename not like '%es' or ename not like '%r';
+
+Q.16)W.A.Q to list all the employees who are having reporting manager in dept 10 along with 10% hike in salary.
+Query:- select *,salary+salary*1/10 as hike_sal from employee where designation='manager' and deptno=10;
+
+Q.17)W.A.Q to display all the employee who are salesman having 'E' as the last but one character in ename but salary having exactly 4 character.
+Query:- select * from employee where designation='salesman' and ename like '%e_' and cast(salary as varchar)like '____';
+
+Q.18)W.A.Q to display who are joined after year 81.
+Query:- select * from employee where hiredate>'1981-12-31';
+
+Q.19)W.A.Q to display all the employee who are joined in feb.
+Query:- select * from employee where cast (hiredate as varchar)like '____-02-__';
+
+Q.20)W.A.Q to list the employees who are not working as managers and clerks in dept 10 and 20 with a salary
+in the range of 1000 to 3000.
+Query:- select * from employee where (designation!='manager' and designation!='clerk')and (deptno=10 and deptno=20)
+and salary between 1000 and 3000;
+
+Q.21)W.A.Q to list the employees whose salary not in the range of 1000 to 2000 and working in dept 10,20 and 30 except all salesman.
+Query:- select * from employee where (salary not between 1000 and 2000)and deptno in(10,20,30)and designation!='salesman';
+
+Q.22)W.A.Q to list the department names which are having letter 'o' in their locations as well as their department names.
+Query:- select dname from employee where location like '%o%' and dname like '%o%';
+
+Q.23)W.A.Q to display all the employees whose job has string 'man' in it.
+Query:- select * from employee where designation like '%man%';
+
+Q.24)W.A.Q to list all the employees who are hired after 82 and before 87.
+Query:- select * from employee where hiredate between'1983-01-01' and '1986-12-31';
+
+Q.25)W.A.Q to list all the employees hired in november and december.
+Query:- select * from employee where cast (hiredate as varchar)like '____-10-__' and cast (hiredate as varchar)like '____-12-__';
+
+Q.26)W.A.Q to list all the employee names and comission for those employees who earn comission more than their salary.
+Query:- select ename,comission from employee where comission>salary;
+
+Q.27)W.A.Q to display name and designation for all the employees having reporting manager and also their name starting with 'S'.
+Query:- select ename,designation from employee where designation='manager' and ename like 'S%';
+
+Q.28)W.A.Q to display name and salary of all employees if their annual salary ends with '0'.
+Query:- select ename,salary,salary*12 as annual_sal from employee where cast(Salary*12 as varchar)like '%0';
+
+Q.29)W.A.Q to display name of the employee having atleast 2l's in his name.
+Query:- select ename from employee where ename like '%l%l%';
+
+Q.30)W.A.Q to display name of the employees whose name starts with a 'vowel'.
+Query:- select ename from employee where ename like 'A%' or ename like 'E%' or ename LIKE 'I%' or ename like 'O%' otr ename like 'U%';
