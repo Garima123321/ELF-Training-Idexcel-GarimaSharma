@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ul li input{
+    height: 25px;
+    margin: auto 0 auto 0;
+    border-radius: 2px;
+    border: none;
+}
+.navbar{
+    background-color: #3B5998 !important;
+}
+ul li label{
+    margin: 0;
+    font-size: small;
+    margin-top: 0;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin-left: auto;
+    margin-right: 300px;
+}
+ul li{
+    margin-left: 30px;
+}
+img{
+    width: 600px;
+    height: 300px;
+}
+section{
+    background-color: #e9ebeee5;
+    background-size: cover;
+}
+section .connect{
+    font-weight: bold;
+    word-spacing: 0.2em;
+    float: left;
+}
+section .create{
+    float: right;
+    width: 40%;
+}
+.create h1{
+    font-size: 35px;
+}
+.create input{
+    height: 30px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 3px;
+}
+.create .set{
+    width: 80%;
+    margin-top: 5%;
+}
+.create .bg{
+    height:auto;
+}
+.create button{
+    padding: 8px 40px;
+    background-color: #5d9149;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+label{
+    display: block;
+    padding: 0.7rem 0;
+    font-weight: bold;
+    color: gray;
+}
