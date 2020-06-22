@@ -1,0 +1,55 @@
+                                                        FUNCTIONS QUERY
+
+Q.1)W.A.Q to list employees whose name having 4 characters.
+Query -->select * from employee where length(ename)=4;
+
+Q.2)W.A.Q to list employees whose job having 7 characters.
+Query -->select * from employee where length(designation)=7;
+
+Q.3)W.A.Q to find out how many times letter 'S' occurs in'qspiders'.
+Query -->select length('qspiders')-length(replace('qspiders','s','')) as "number of s";
+
+Q.4)W.A.Q to list the employees whose job is having last 3 characters as 'man'.
+Query -->select ename from employee where right(designation,3)='man';
+
+Q.5)W.A.Q to list employees whose job is having first 3 characters as 'man'.
+Query -->select ename from employee where left(designation,3)='man';
+
+Q.6)W.A.Q to display all the names whose name is having exactly 1 'L'.
+Query -->select ename from employee where length(ename)-length(replace(ename,'l',''))=1;
+
+Q.7)W.A.Q to display dept names which are having letter 'O'.
+Query -->select designation from employee where substring(designation,'o')is not null;
+
+Q.8)W.A.Q to display the  output as shown below
+Scott working as a clerk earns 3000 in dept 20.
+Query -->select  concat(concat(concat(concat(concat(concat(concat(ename, ' working as a '),designation), ' earns '),sal), ' in '), ' dept '),deptno) as text from emp;
+
+Q.9)W.A.Q to calculate number of L in string 'HELLLLL'.
+Query -->select length('HELLLLL')-length(replace('HELLLLL','L','')) as "no_of_L";
+
+Q.10)W.A.Q to display all the employees whose job has a string 'MAN'.
+Query -->select * from employee where position('man' designation)!=0;
+
+Q.11)W.A.Q to display all the employees whose job starts with string 'MAN'.
+Query -->select ename from employee where left(designation,3)='man';
+
+Q.12)W.A.Q to display all the employees whose job ends with string 'MAN'.
+Query -->select ename from employee where right(designation,3)='man';
+
+Q.13)W.A.Q to display first 3 characters of ename in lower case and rest everything in upper case.
+If ename is 'QSPIDERS' then display this as 'qspIDERS'.
+Query -->select ename,concat(lower(substr(ename,1,3)),upper(substr(ename,4))) from employee;
+
+Q.14)W.A.Q to display the result from emp table as below.
+SMITH is a CLERK and gets salary 2000
+Query -->select concat(concat(concat(concat(ename, ' is a '),designation), ' and gets salary '), salary) as text from employee;
+
+Q.15)W.A.Q to list the employees hired on a Wednesday.
+Query -->select * from employee where to_char(hiredate,'day')='wednesday';
+
+Q.16)W.A.Q to list the employees hired on a leap year.
+Query --> select * from employee where cast(extract(year from hiredate) as int)%400=0 or (cast(extract(year from hiredate) as int) % 4=0 and cast(extract(year from hiredate) as int)% 100!=0);
+
+Q.17)W.A.Q to list the employees hired on a Sunday in the month of may.
+Query -->select * from employee where to_char(hiredate,'mon')='may' and to_char(hiredate,'day')='sunday';

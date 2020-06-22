@@ -1,0 +1,82 @@
+                                             JOINS QUERY
+
+1.LIST ENAME, JOB, ANNUAL SAL, DEPTNO, DNAME WHO EARN 30000 PER YEAR AND WHO ARE NOT CLERKS 
+QUERY -->select ename,designation,e.deptno,dname,salary*12 annual_sal from employee e inner join department_info d on e.deptno=d.deptno and salary*12=30000 and designation<>'clerk';
+
+2.LIST OUT THE ALL EMPLOYEES BY NAME AND EMPLOYEE NUMBER ALONG WITH THEIR MANAGER'S NAME AND EMPLOYEE NUMBER 
+QUERY -->select e1.ename,e1.empid,e2.ename,e2.empid from employee e1 join employee e2 on e1.mgr=e2.ename;
+
+3.DISPLAY ENAME,DNAME EVEN IF THERE NO EMPLOYEES WORKING IN A PARTICULAR DEPARTMENT.
+QUERY -->select ename,dname from employee e natural join department_info d on e.deptno=d.deptno where deptno in(10,20,30,40);
+
+4.DISPLAY THE DEPARTMENT NAME ALONG WITH TOTAL SALARY IN EACH DEPARTMENT 
+QUERY -->select dname,sum(salary) from employee e inner join department_info d on e.deptno=d.deptno group by deptno;
+
+5.DISPLAY EMPLOYEE NAME AND DEPARTMENT NAME FOR EACH EMPLOYEE
+QUERY -->select ename,dname from employee e inner join department_info d on e.deptno=d.deptno; 
+
+6.DISPLAY LOCATION NAME OF THE EMPLOYEE WHO EARN COMMISSION.
+QUERY -->select location from employee e right join department_info d on e.deptno=d.deptno where comm is not null; 
+
+7.DISPLAY DEPT NAME OF THE EMPLOYEE WHO EARN MIN SALARY AND HAVE NO REPORTING MANAGER.
+QUERY -->select min(salary),dname from employee e inner join department_info on e.deptno=d.deptno where rep_mgr is null;
+
+8.DISPLAY DEPT NAME,LOC OF ALL THE EMPLOYEES WHO ARE REPORTING TO SMITH.
+QUERY -->select dname.location from employee e right join department_info d on e.deptno=d.deptno where rep_mgr='smith';
+
+9.LIST ALL THE DEPT NAME AND LOCATION OF ALL THE SALESMAN MANAGER'S MANAGER.
+QUERY -->select dname,location from department_info d inner join employee e on e.deptno=d.deptno and ename in(select mgr from employee where ename in(select mgr from employee where designation='salesman'));
+
+10.LIST EMPLOYEES WHO ARE WORKING IN RESEARCH DEPT AND THEY ARE MANAGER.
+QUERY -->select * from employee e inner join department_info d on e.deptno=d.deptno where dname='research' and designation='Manager';
+
+11.DISPLAY THE NUMBER OF EMPLOYEES WHO ARE GETTING SALARY LESS THAN THE BLAKE'S MANAGER.
+QUERY -->select count(*) from employee e1 join employee e2 on e1.sal=e2.sal and e2.name=(select mgr from employee where ename='blake') and e1.sal>e2.sal;
+
+12.LIST THE EMPLOYEE DEPTNAME AND LOCATION OF ALL THE EMPLOYEES WHO ARE ANALYST,REPORTING TO BLAKE.
+QUERY -->select dname,location from employee e inner join join department_info d on e.deptno=d.deptno where designation='analyst' and rep_mgr='blake';
+
+13.DISPLAY THE EMPLOYEE NAMES,HIREDATE,COMM OF FORD'S MANAGER
+QUERY -->select e1.ename,e1.hiredate,e1.comm from employee e1 join employee e2 on e1.ename=e2.ename where e1.ename in(select mgr from employee whetre ename='ford'); 
+
+14.DISPLAY ENAME, DNAME OF ALL THE EMPLOYEES WHOSE SALARY LESS THAN AVG SAL OF DEPT 30
+QUERY -->select ename,dname from employee e inner join departent_info d on e.deptno=d.deptno where salary<(select avg(salary) from employee where deptno=30 group by deptno);
+
+15.DISPLAY ENAME DNAME AND LOC OF ALL THE EMPLOYEES WHO ARE WORKING FOR JONES
+QUERY -->select ename,dname,location from employee e inner join department_info d on e.deptno=d.deptno where mgr=(select empid from employee where ename='jones');
+
+16.DISPLAY ENAME DNAME OF ALL THE EMPLOYEES WHOSE NAME STARTS WITH S
+QUERY -->select ename,dname from employee e inner join department_info d on e.deptno=d.deptno where ename like 'S%';
+
+17.LIST THE DNAME WHO ARE NOT HAVING ANY EMPLOYEE IN IT
+QUERY -->select dname from employee e right join department_info d on e.deptno=d.deptno where e.deptno is null;
+
+18.DISPLAY EMPLOYEE WHO ARE GETTING SAME COMMISSION
+QUERY -->select e1.ename from employee e1 join employee e2 on e1.comm=e2.comm and e1.empid<>e2.empid and e1.comm is not null and e2.comm is not null;
+
+19.DISPLAY ALL THE DEPT NAMES IRRESPECTIVE OF ANY EMPLOYEE WORKING IN IT OR NOT. IF AN EMPLOYEE IS WORKING DISPLAY HIS NAME.
+QUERY -->select dname,ename from employee e right join department_info d on e.deptno=d.deptno;
+
+20.WRITE A QUERY TO DISPLAY EMPLOYEE NAME, JOB, DNAME, LOCATION OF ALL EMPLOYEES WHO ARE WORKING AS ACTUAL MANAGERS AND WORKS AT CHICAGO.
+QUERY -->select ename,designation,dname,location from employee e inner join department_info d on e.deptno=d.deptno where designation='manager' and location='chicago';
+
+21.LIST THE DEPARTMENT NAMES IN WHICH THE EMPLOYEES ARE HIRED BETWEEN 1ST OF JAN 1981 AND 31ST DEC 1982 WITH SALARY MORE THAN 1800.
+QUERY -->select dname from employee e right join department_info d on e.deptno=d.deptno where hiredate between '1981-01-01' and '1982-12-31' and salary >1800;
+
+**22.DISPLAY 2ND LEAST SALARY FROM EMPLOYEE TABLE.
+QUERY -->select min(e1.salary) from employee e1 join employee e2 on e1.salary=e2.salary where e1.salary<(select min(salary) from employee);
+
+23.LIST THE EMPLOYEES WHOSE ANNUAL SALARY IS GREATER THAN 1500 AND WHO ARE JOINED BEFORE 1982 ONLY.
+QUERY -->select ename from employee e1 join employee e2 on e1.empid=e2,empid where salary*12>1500 and hiredate<'1982-01-01';
+
+24.DISPLAY DNAME, LOC, DEPTNO OF EMPLOYEES WHO HAS SAME REPORTING MANAGER
+QUERY -->select dname,location,deptno from department_info where deptno in(select e1.deptno from employee e1 join employee e2 on e1.mgr=e2.mgr where e1.empid<>e2.empid);
+
+25.DISPLAY EMPLOYEE NAME ALONG WITH THEIR MANAGER NAME.
+QUERY -->select e1.ename,e1.mgr from employee e1 join employee e2 on e1.empid=e2.empid;
+
+26.DISPLAY EMPLOYEE NAME AND HIS DEPT NAME FOR THE EMPLOYEES WHOSE NAME STARTS WITH ‘S’.
+QUERY -->select ename,dname from employee e inner join department_info d on e.deptno=d.deptno where ename like 'S%';
+
+27.DISPLAY EMPLOYEES WHO ARE GETTING SAME SALARY.
+QUERY -->select e1.ename,e1.salary from employee e1 join employee e2 on e1.salary=e2.salary and e1.ename<>e2.ename;

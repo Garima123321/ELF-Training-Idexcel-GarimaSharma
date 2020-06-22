@@ -1,0 +1,61 @@
+                                             GROUPBY AND HAVING CLAUSE QUERY
+
+1.WRITE A QUERY TO DISPLAY TOTAL SALARY NEEDED TO PAY EACH JOB IN EMPLOYEE TABLE.
+Query -->select sum(salary) from employee group by designation;
+
+2.WRITE A QUERY TO DISPLAY THE HIRE DATE ON WHICH AT LEAST 3 EMPLOYEES WHERE HIRED.
+Query -->select hiredate from employee group by hiredate having count(*)>=3;
+
+3.WRITE A QUERY TO DISPLAY THE DEPARTMENT NUMBER WHICH HAS MORE THAN 2 EMPLOYEES AND THE TOTAL AMOUNT REQUIRED TO PAY THE MONTHLY SALARIES OF ALL THE EMPLOYEES IN THAT DEPARTMENT SHOULD BE MORE THAN 9000.
+Query -->select deptno,sum(sal) from employee where salary>9000 group by deptno having count(*)>2;
+
+4.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES WORKING IN EACH DEPARTMENT AND IT'S AVERAGE SALARY BY EXCLUDING ALL THE EMPLOYEES WHOSE SALARY IS LESS THAN THEIR COMMISSION.
+Query -->select count(ename) no_of_emp,avg(salary),comission from employee where salary<comission group by deptno; 
+
+5.WRITE A QUERY TO DISPLAY THE SALARIES WHICH HAS REPETITIONS IN THE SAL COLUMN OF EMPLOYEE TABLE.
+Query -->select salary from employee group by salary having count(*)>1;
+
+6.WRITE A QUERY TO DISPLAY THE EMPLOYEE NAME ONLY IF MORE THAN ONE PERSON IN THE EMPLOYEES OF THE COMPANY HAS SAME NAME.
+Query -->select ename from employee group by ename having count(*)>1;
+
+7.WRITE A QUERY TO DISPLAY THE DEPARTMENT NUMBER WHOSE AVERAGE SALARY IS BETWEEN 2500 AND 3000.
+Query -->select deptno from employee where salary/12 between 2500 and 3000 group by deptno;
+
+8.WRITE A QUERY TO DISPLAY THE NUMBER OF EMPLOYEES ONLY IF THEY ARE WORKING AS MANAGER OR ANALYST AND THEIR ANNUAL SAL SHOULD END WITH A ZERO, IN EACH DEPARTMENT.
+Query -->select count(ename) no_of_emp from employee where designation='manager' or designation='analyst' and cast(salary*12 as varchar)like '%0' group by designation,salary;
+
+9.WRITE A QUERY TO DISPLAY NO OF CLERKS WORKING IN EACH DEPARTMENT.
+Query -->select count(designation) from employee where designation='clerk' group by designation; 
+
+10.WRITE A QUERY TO DISPLAY HIGHEST SALARY GIVEN TO A MANAGER IN EACH DEPARTMENT.
+Query -->select max(salary),deptno from employee where designation='manager' group by salary,deptno;
+
+11.WRITE A QUERY TO DISPLAY NO OF TIMES THE SALARIES HAVE REPEATED IN THE EMP TABLE.
+Query -->select count(salary) from employee group by salary having count(*)>1;
+
+12.WRITE A QUERY TO DISPLAY DEPTNO AND NUMBER OF EMPLOYEES WHORKING IN EACH DEPARTMENT EXCEPT FOR THOSE WORKING IN DEPT 10.
+Query -->select deptno,count(ename) no_of_emp from employee where deptno <>10 group by deptno;
+
+13.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES GETTING COMISSION IN EACH DEPARTMENT.
+Query -->select count(*) from employee_info where comm is not null group by dept_no;
+
+14.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES GETTING SALARY MORE THAN 1600 EXCLUDING ALL THE MANAGERS IN EACH DEPARTEMNT. 
+Query -->select count(ename) no_of_emp from employee where salary>1600 and designation <>'Manager' group by deptno;
+
+15.WRITE A QUERY TO DISPLAY AVERAGE SALARY NEEDED TO PAY ALL THE EMPLOYEES WHO ARE HAVING A REPORTING MANAGER IN EACH JOB .
+Query -->select avg(salary) from employee where designation='manager' group by designation;
+
+16.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES HIRED INTO THE SAME DEPARTMENT ON THE SAME DAY.
+Query --> select hiredate from employee group by hiredate having count(*)>=2;
+
+17.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES GETTING THE SAME SALARY , WORKING IN THE SAME DEPARTMENT.
+Query -->select count(ename) no_of _emp from employee group by salary,deptno having count(*)>1;
+
+18.WRITE A QUERY TO DISPLAY MAXIMUM SALARY GIVEN IN EACH DESIGNATION EXCLUDING THOSE WHOSE NAME STARTS WITH ‘K’.
+Query -->select max(salary) from employee where designation not like 'K%' group by designation;
+
+19.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEES REPORTING TO 7839 IN EACH DEPT.
+Query -->select count(*) from employee where mgr=7839 group by deptno;
+
+20.WRITE A QUERY TO DISPLAY NUMBER OF EMPLOYEE NAMES STARTING WITH AN VOWEL IN EACH DEPARTMENT. 
+Query -->select count(ename) no_of_emp,deptno from employee where ename like 'A%' or ename like 'E%' or ename like 'I%' or ename like 'O%' or ename like 'U%' group by deptno;
