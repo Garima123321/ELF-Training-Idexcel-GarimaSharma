@@ -1,0 +1,267 @@
+                                                                        JAVASCRIPT ASSIGNMENT-2
+
+EASY:
+
+1.Add up the numbers from a single number
+-->function addUp(num){
+	var sum=0;
+	for(var i=1;i<=num;i++){
+		sum=sum+i;
+	}
+	return sum;
+   }
+
+2.Find ther smallest and biggest number
+-->function minMax(arr){
+	var min=arr[0];
+	var max=arr[0];
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]>max){
+			max=arr[i];
+		}
+		if(arr[i]<min){
+			min=arr[i];
+		}
+	}
+	return [min,max]
+   }
+
+3.MatchStick Hoouses
+-->function matchHouses(step){
+	if(step == 0){
+		return 0;
+	}else{
+ 		return(step * 5) + 1;
+	}   
+   }
+
+4.Factorial of a positive integer
+-->function factorial(z) {
+	if(z<=1){
+		return 1;
+	}
+	return z * factorial(z-1);
+   }
+
+5.Absolute Sum
+-->function getAbsSum(arr) {
+	var sum=0;
+	for(var i=0;i<arr.length;i++){
+		sum=sum+Math.abs(arr[i]);
+	}
+	return sum;
+   }
+
+6.How many Vowels
+-->function countVowels(str){
+	var vCount=0;
+	var string=str.toString();
+	for(var i=0;i<=string.length-1;i++){
+		if(string.charAt(i)=="a"||string.charAt(i)=="e"||string.charAt(i)=="i"||string.charAt(i)=="o"||string.charAt(i)=="u"){
+			vCount=vCount+1;
+		}
+	}
+	return vCount;
+   }
+
+7.Bitwise Operations
+-->function bitwiseAND(n1, n2) {
+	return n1 & n2;
+   }
+
+function bitwiseOR(n1, n2) {
+	return n1 | n2;
+   }
+
+function bitwiseXOR(n1, n2) {
+	return n1 ^ n2;
+   }
+
+8.Sum of Cubes
+-->function sumOfCubes(nums) {
+	var sum = 0;
+	for(var i=0;i<nums.length;i++){
+		sum = sum +Math.pow(nums[i],3);
+	}
+	return sum;
+   }
+
+9.Return the Factorial
+-->function factorial(int) {
+	if(int<=1){
+		return 1;
+	}
+	return int * factorial(int-1);
+   }
+
+10.Highest Digit
+-->function highestDigit(number) {
+	if(number==0){
+		return 0;
+	}
+	else{
+		return Math.max(number%10,highestDigit(Math.floor(number/10)));
+	}
+   }
+
+
+MEDIUM:
+
+1.How much is true?
+-->function countTrue(arr) {
+	 var count=0;
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]===true){
+			count++;
+		}
+	}
+	return count;
+   }
+
+2.Triangular Number Sequence
+-->function triangle(n) {
+	return n * (n+1)/2;
+   }
+
+3.Concatenate Variable no of Input Arrays
+-->function concat(...args) {
+	var result=[];
+	return result.concat(...args);
+   }
+
+4.Array of Multiples
+-->function arrayOfMultiples (num, length) {
+	var result=[];
+	for(var i=1; i<=length; i++){
+		result.push(num*i)
+	}
+	return result;
+   }
+
+5.Basic Calculator
+-->function calculator(num1, operator, num2) {
+	return{
+		'+':num1+num2,
+		'-':num1-num2,
+		'*':num1*num2,
+		'/':num2?num1/num2:"Can't divide by 0!",
+		'%':num1%num2
+	}
+   }
+
+6.One Odd And One Even
+-->function oneOddOneEven(n) {
+	var [num1,num2]=[...''+n];
+	return num1%2 !=num2%2
+   }
+
+7.Reverse a Number
+-->function rev(n) {
+	return Math.abs(n).toString().split("").reverse().join("");
+   }
+
+8.Get the Century
+-->function century(year) {
+	return year>2000 ? "21st century" : Math.ceil(year/100) + "th century";
+   }
+
+9.Double Letters
+-->function doubleLetters(word) {
+	word=word.split("");
+	for(var i=0;i<word.length;i++){
+		if(word[i-1]==word[i]){
+			return true;
+			break;
+		}
+	}
+	return false;
+   }
+
+10.Return the Sum of two Smallest Numbers
+-->function sumTwoSmallestNums(arr) {
+	arr=arr.sort((a,b)=>a-b).filter(x=>x>0);
+	return arr[0]+arr[1];
+   }
+
+11.Get the Date
+-->function getDay(day) {
+	var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+	var date=new Date(day)
+	return days[date.getDay()]
+   }
+
+12.Is the Number prime
+-->function isPrime(num) {
+	for(var i=2 ;i<num ;i++){
+		if(num%i==0){
+			return false;
+		}
+	}
+	return true;
+   }
+
+13.Days in a Month
+-->function days(month, year) {
+	return new Date(year,month,0).getDate()
+   }
+
+14.GCD of two Numbers
+-->function gcd(n1, n2) {
+	if(n1 == 0){
+		return n2;
+	}
+	return gcd(n2 % n1, n1);
+   }
+
+15.Recursion:String Palindrome or not
+-->function isPalindrome(str) {
+	if(str.length<2){
+		return true;
+	}
+	if(str.charAt(0)===str.charAt(str.length-1)){
+		return isPalindrome(str.substr(1,str.length-2))
+	}else return false;
+   }
+
+16.Power of Two
+-->function powerOfTwo(num) {
+	while(((num%2)==0)&& num>1)
+		num=num/2;
+	return(num==1);
+   }
+
+17.ReverseAndNot
+-->function reverseAndNot(i) {
+	var reversed=i.toString().split("").reverse().join("");
+	return +(reversed+i);
+   }
+
+18.Factorize a Number
+-->function factorize(num) {
+	var factors=[]
+	for(i=1;i<=num;i++){
+		if(num%i===0){
+			factors.push(i)
+		}
+	}
+	return factors
+   }
+
+19.Factor Chain
+-->function factorChain(arr) {
+	for(var i=0;i<arr.length-1;i++){
+		if((arr[i+1]%arr[i]))
+			return false;
+	}
+	return true;
+   }
+
+20.Even or Odd Number of Factors
+-->function factorGroup(num) {
+	var r=[];
+	for(var i=1;i<=num;i++){
+		if(num%i==0)
+			r.push(i);
+	}
+	return r.length % 2==1?'odd':'even';
+   }  
