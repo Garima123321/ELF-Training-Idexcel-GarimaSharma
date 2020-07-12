@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        button{
+            background-color: black;
+            color: white;
+        }
+        li{
+            color: red;
+            font-family: cursive;
+        }
+        input[type="submit"]{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=row>
+            <div class="col-md-6">
+                <h1> Cricket Teams </h1>
+                <ul id="demo">
+                    <li onclick="getDelete(this)">India</li>
+                    <li onclick="getDelete(this)">Australia</li>
+                    <li onclick="getDelete(this)">WestIndies</li>
+                    <li onclick="getDelete(this)">NewZealand</li>
+                </ul>
+                <input type="text" name="Cricket" id="Cricket">
+                <input type="submit" onclick="insert()" value="Add New Team">
+                <button onclick="remove()">Delete</button>
+            </div>
+            <div class="col-md-6">
+                <h1> Players </h1>
+                <ul id="item">
+                    <li onclick="getDeleteItem(this)">Dohni</li>
+                    <li onclick="getDeleteItem(this)">Virat</li>
+                    <li onclick="getDeleteItem(this)">Shikhar</li>
+                    <li onclick="getDeleteItem(this)">Rohit</li>
+                </ul>
+                <input type="text" name="Players" id="Players">
+                <input type="submit" onclick="insertItem()" value="Add New Player">
+                <button onclick="removeItem()">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.5.0.js"></script>
+    <script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
